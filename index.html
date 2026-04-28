@@ -2,246 +2,271 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!--The below tag is for browser tab color in phones chrome preffered -->
-        <meta name="theme-color" content="#f53f2b">
+        <meta name="theme-color" content="#0b0f17">
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <!--Type Below the thing that should apear under yoyr name in an Search Engine snipet -->
-        <meta name="description" content="Portfolio">
-        <!--Type the your spealizations here -->
-        <meta name="keywords" content="HTML, CSS, JavaScript, wavify.js, Developer">
-        <!--Write your name below -->
+        <meta name="description" content="Elvis Segovia — Software Engineer based in Itapúa, Paraguay. Building APIs, web apps and tools.">
+        <meta name="keywords" content="Elvis Segovia, Software Engineer, Developer, Paraguay, Java, Python, Go, JavaScript, React, VueJS, API Developer">
         <meta name="author" content="Elvis Segovia">
-        <!--Add a square image of yours -->
         <link rel="shortcut icon" href="assets/img/aboutme.jpg" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- This is the main compiled scss file-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/test.css">
-        <!--Css file for Icons use in skill section -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-        <!--Font awesome (Best Icons site ) -->
         <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
-        <!--For Css Animations in the site -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <!--Enter your Name here and Speacializations so that ur site will be easily available on search engines-->
-        <title>Elvis Segovia | Developer</title>
+        <title>Elvis Segovia · Software Engineer</title>
     </head>
 
     <body>
-        <div class="area" >
-            <div class="landing">
-                <!--Make sure that the image u add here is a square image and for best performance compress the image -->
-                <div class="img animate__animated animate__slideInDown wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img src="assets/img/me.jpeg" alt="photo"></div>
-                <div class="me animate__animated animate__slideInUp wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                    <!--Enter your name here-->
-                    <section class="shortme">
-                        <h2>Elvis Segovia</h2>
-                    </section>
-                    <h3 id="typed"></h3>
-                </div>
+        <div class="bg-grid"></div>
+        <div class="bg-glow"></div>
+        <canvas id="matrix"></canvas>
+
+        <header class="topbar">
+            <div class="topbar-left">
+                <span class="dot dot-r"></span>
+                <span class="dot dot-y"></span>
+                <span class="dot dot-g"></span>
+                <span class="topbar-title">elvis@portfolio: ~</span>
             </div>
-            <div class="about">
-                <div class="title">Portfolio</div>
-                <div class="card-wrapper">
-                    <div class="box box1 animate__animated animate__slideInLeft wow" data-wow-duration="1s" data-wow-delay="0s"><span> <b>About Me</b></span>
-                        <!--Add a SQUARE IMAGE OF YOURS FOR BEST APPEARENCE (1:1)-->
-                        <img src="assets/img/aboutme.jpg" alt="">
-                        <p>Hey I am Elvis Segovia from Itapúa, Paraguay.<br>I am currently pursuing my degree in Software Engineering. <br>I love coding and learning new programming languages ❤️ </p>
-                        <div class="resume"><button type="submit"  onclick=" window.open('resume.html', '_blank')">Resume</button></div>
+            <nav class="topbar-nav">
+                <a href="#about">about</a>
+                <a href="#skills">stack</a>
+                <a href="#connect">connect</a>
+                <a href="resume.html" target="_blank" rel="noopener">resume.pdf</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="hero">
+                <div class="hero-text">
+                    <div class="prompt">
+                        <span class="prompt-user">elvis</span><span class="prompt-at">@</span><span class="prompt-host">paraguay</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-sym">$</span>
+                        <span class="prompt-cmd">whoami</span>
                     </div>
-                    <div class="box box2 animate__animated animate__slideInUp wow" data-wow-duration="1s" data-wow-delay="0.37s"> <span><b>Skills</b></span>
-                        <br> <span>Programming</span>
-                        <ul class="mainlist">
-                            <!--U can use Fontawsome icons here-->
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-java-plain"></i></li>
-                                <li>Java</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-python-plain"></i></li>
-                                <li>Python</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-javascript-plain"></i></li>
-                                <li>JavaScript</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-go-plain"></i></li>
-                                <li>Go</li>
-                            </ul>
-                        </ul>
-                        <span style="width: 100%; text-align: center;">Frameworks</span>
-                        <ul class="mainlist">
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-jquery-plain-wordmark"></i></li>
-                                <li>JQuery</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-vuejs-plain"></i></li>
-                                <li>VueJS</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-react-plain"></i></li>
-                                <li>ReactJS</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-flask-plain"></i></li>
-                                <li>Flask</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-pandas-original"></i></li>
-                                <li>Pandas</li>
-                            </ul>
-                        </ul>
-                        <span style="width: 100%; text-align: center;">Databases</span>
-                        <ul class="mainlist">
-                            <!--USE ICONS FROM ICONS8 OF SIZE 48PX FOR BEST APPEARANCE -->
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-mysql-plain"></i></li>
-                                <li>MySQL</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-postgresql-plain"></i></li>
-                                <li>PostgreSQL</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-mongodb-plain"></i></li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </ul>
-                        <span>Tools</span>
-                        <ul class="mainlist">
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-git-plain"></i></li>
-                                <li>Git</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-github-plain"></i></li>
-                                <li>Github</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-gitlab-plain"></i></li>
-                                <li>Gitlab</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-vscode-plain"></i></li>
-                                <li>VSCode</li>
-                            </ul>
-                            <ul class="sublist">
-                                <li class="icon"><i class="devicon-docker-plain"></i></li>
-                                <li>Docker</li>
-                            </ul>
-                        </ul>
+                    <h1 class="hero-name">Elvis Segovia<span class="caret">_</span></h1>
+                    <h2 class="hero-role">&gt; <span id="typed"></span><span class="role-caret">▍</span></h2>
+                    <p class="hero-blurb">
+                        Software engineer based in Itapúa, Paraguay. I build APIs, web apps and small tools — currently pursuing my degree in Software Engineering and shipping side projects in my spare time.
+                    </p>
+                    <div class="hero-meta">
+                        <span class="badge"><i class="fas fa-map-marker-alt"></i> Itapúa, PY</span>
+                        <span class="badge status"><span class="pulse"></span> Open to work</span>
+                        <span class="badge"><i class="far fa-clock"></i> UTC−3</span>
                     </div>
-                    <div class="box box3 animate__animated animate__slideInUp wow">
-                        <h3>Connect</h3>
-                        <div>
-                            <a href="https://github.com/elvus" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="linkedin.com/in/elvis-segovia-6563aa171" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="mail:lvssgv@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
-                            <a href="https://twitter.com/elvossss" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </div>
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="resume.html" target="_blank" rel="noopener">
+                            <i class="fas fa-file-code"></i> View resume
+                        </a>
+                        <a class="btn btn-ghost" href="#connect">
+                            <i class="fas fa-terminal"></i> Get in touch
+                        </a>
                     </div>
                 </div>
+                <div class="hero-card">
+                    <div class="hero-card-bar">
+                        <span class="dot dot-r"></span>
+                        <span class="dot dot-y"></span>
+                        <span class="dot dot-g"></span>
+                        <span class="file-tab">profile.json</span>
+                    </div>
+                    <pre class="hero-code"><code><span class="tk-c">// developer profile</span>
+<span class="tk-k">const</span> <span class="tk-v">elvis</span> = {
+  <span class="tk-p">name</span>: <span class="tk-s">"Elvis Segovia"</span>,
+  <span class="tk-p">role</span>: <span class="tk-s">"Software Engineer"</span>,
+  <span class="tk-p">location</span>: <span class="tk-s">"Itapúa, Paraguay"</span>,
+  <span class="tk-p">stack</span>: [<span class="tk-s">"Go"</span>, <span class="tk-s">"Python"</span>, <span class="tk-s">"JS"</span>, <span class="tk-s">"Java"</span>],
+  <span class="tk-p">focus</span>: [<span class="tk-s">"APIs"</span>, <span class="tk-s">"Web"</span>, <span class="tk-s">"Tooling"</span>],
+  <span class="tk-p">learning</span>: <span class="tk-s">"every day"</span> <span class="tk-c">// ❤️</span>,
+  <span class="tk-p">available</span>: <span class="tk-n">true</span>,
+};</code></pre>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <h3 class="section-title"><span class="hash">#</span> about</h3>
+                <div class="about-grid">
+                    <div class="about-photo">
+                        <img src="assets/img/aboutme.jpg" alt="Elvis Segovia">
+                        <div class="about-photo-frame"></div>
+                    </div>
+                    <div class="about-body">
+                        <p>
+                            Hey — I'm <strong>Elvis</strong>, a software engineering student from Itapúa, Paraguay. I love writing code, breaking things, and learning new languages and frameworks along the way.
+                        </p>
+                        <p>
+                            I'm most at home building backends and APIs, but I also enjoy frontend work and the occasional data project. Outside of code, I'm usually reading docs, exploring open source, or hacking on something small.
+                        </p>
+                        <ul class="about-list">
+                            <li><span class="kbd">$</span> Currently studying Software Engineering</li>
+                            <li><span class="kbd">$</span> Building side projects with Go, Python and JS</li>
+                            <li><span class="kbd">$</span> Open to internships and collaborations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h3 class="section-title"><span class="hash">#</span> stack</h3>
+
+                <div class="stack-group">
+                    <div class="stack-label">// languages</div>
+                    <div class="stack-grid">
+                        <div class="chip"><i class="devicon-go-plain"></i><span>Go</span></div>
+                        <div class="chip"><i class="devicon-python-plain"></i><span>Python</span></div>
+                        <div class="chip"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                        <div class="chip"><i class="devicon-java-plain"></i><span>Java</span></div>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <div class="stack-label">// frameworks &amp; libraries</div>
+                    <div class="stack-grid">
+                        <div class="chip"><i class="devicon-react-plain"></i><span>React</span></div>
+                        <div class="chip"><i class="devicon-vuejs-plain"></i><span>Vue.js</span></div>
+                        <div class="chip"><i class="devicon-flask-plain"></i><span>Flask</span></div>
+                        <div class="chip"><i class="devicon-jquery-plain-wordmark"></i><span>jQuery</span></div>
+                        <div class="chip"><i class="devicon-pandas-original"></i><span>Pandas</span></div>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <div class="stack-label">// databases</div>
+                    <div class="stack-grid">
+                        <div class="chip"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
+                        <div class="chip"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+                        <div class="chip"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></div>
+                    </div>
+                </div>
+
+                <div class="stack-group">
+                    <div class="stack-label">// tools &amp; platforms</div>
+                    <div class="stack-grid">
+                        <div class="chip"><i class="devicon-git-plain"></i><span>Git</span></div>
+                        <div class="chip"><i class="devicon-github-plain"></i><span>GitHub</span></div>
+                        <div class="chip"><i class="devicon-gitlab-plain"></i><span>GitLab</span></div>
+                        <div class="chip"><i class="devicon-docker-plain"></i><span>Docker</span></div>
+                        <div class="chip"><i class="devicon-vscode-plain"></i><span>VS Code</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="connect" class="section">
+                <h3 class="section-title"><span class="hash">#</span> connect</h3>
+                <div class="connect-card">
+                    <pre class="connect-cmd"><code><span class="tk-c">$</span> ssh elvis@network --channels</code></pre>
+                    <div class="connect-links">
+                        <a class="link" href="https://github.com/elvus" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <div class="link-title">GitHub</div>
+                                <div class="link-sub">@elvus</div>
+                            </div>
+                        </a>
+                        <a class="link" href="https://www.linkedin.com/in/elvis-segovia-6563aa171" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div>
+                                <div class="link-title">LinkedIn</div>
+                                <div class="link-sub">elvis-segovia</div>
+                            </div>
+                        </a>
+                        <a class="link" href="mailto:lvssgv@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div class="link-title">Email</div>
+                                <div class="link-sub">lvssgv@gmail.com</div>
+                            </div>
+                        </a>
+                        <a class="link" href="https://twitter.com/elvossss" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                            <div>
+                                <div class="link-title">Twitter</div>
+                                <div class="link-sub">@elvossss</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-line">
+                <span class="tk-c">// built with HTML, CSS and a lot of coffee ☕</span>
             </div>
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-        </div >
-        <!--Landing div-->
-        <!--TypedJs -->
+            <div class="footer-line">
+                <span>© <span id="year"></span> Elvis Segovia</span>
+                <span class="sep">·</span>
+                <span>v2.0</span>
+            </div>
+        </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
         <script>
-            //Enter your specilizations here
-            var typed = new Typed("#typed", {
-                strings: ['Programmer', 'Engineer', 'Web Developer', 'API Developer'],
-                typeSpeed: 50,
+            new Typed("#typed", {
+                strings: [
+                    "software engineer",
+                    "backend developer",
+                    "API developer",
+                    "web developer",
+                    "lifelong learner"
+                ],
+                typeSpeed: 55,
+                backSpeed: 30,
+                backDelay: 1500,
                 smartBackspace: true,
-                backSpeed: 35,
                 loop: true,
                 showCursor: false,
             });
-        </script>
-        <!--Wow js is for aniamtion on scroll-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
-        <script>
-            new WOW().init();
-        </script>
-        <!--Dont forget to follow me and star the repo on github !!!!!!!-->
-        <!-- Code injected by live-server -->
-        <script>
-            // <![CDATA[  <-- For SVG support
-            if ('WebSocket' in window) {
-                (function () {
-                    function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                            var elem = sheets[i];
-                            var parent = elem.parentElement || head;
-                            parent.removeChild(elem);
-                            var rel = elem.rel;
-                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                            }
-                            parent.appendChild(elem);
+
+            document.getElementById("year").textContent = new Date().getFullYear();
+
+            // Matrix-style code rain background
+            (function () {
+                const canvas = document.getElementById("matrix");
+                const ctx = canvas.getContext("2d");
+                let columns, drops;
+                const chars = "01{}<>/=();[]+-*&|!#$%abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+                function resize() {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    const fontSize = 14;
+                    columns = Math.floor(canvas.width / fontSize);
+                    drops = new Array(columns).fill(0).map(() => Math.random() * -canvas.height);
+                }
+                resize();
+                window.addEventListener("resize", resize);
+
+                function draw() {
+                    ctx.fillStyle = "rgba(11, 15, 23, 0.08)";
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = "rgba(34, 211, 153, 0.55)";
+                    ctx.font = "14px JetBrains Mono, monospace";
+                    for (let i = 0; i < drops.length; i++) {
+                        const text = chars[Math.floor(Math.random() * chars.length)];
+                        ctx.fillText(text, i * 14, drops[i] * 14);
+                        if (drops[i] * 14 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                        drops[i]++;
+                    }
+                    requestAnimationFrame(draw);
+                }
+                draw();
+            })();
+
+            // Smooth-scroll for in-page links
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener("click", e => {
+                    const id = a.getAttribute("href");
+                    if (id.length > 1) {
+                        const el = document.querySelector(id);
+                        if (el) {
+                            e.preventDefault();
+                            el.scrollIntoView({ behavior: "smooth", block: "start" });
                         }
                     }
-                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                    var address = protocol + window.location.host + window.location.pathname + '/ws';
-                    var socket = new WebSocket(address);
-                    socket.onmessage = function (msg) {
-                        if (msg.data == 'reload') window.location.reload();
-                        else if (msg.data == 'refreshcss') refreshCSS();
-                    };
-                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                        console.log('Live reload enabled.');
-                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                    }
-                })();
-            }
-            else {
-                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-            }
-            // ]]>
-            let setImage = false;
-            if(setImage){
-                const img = [
-                    "url('assets/img/python.svg')",
-                    "url('assets/img/javascript.svg')",
-                    "url('assets/img/golang.svg')",
-                    "url('assets/img/java.svg')",
-                    "url('assets/img/java.svg')",
-                    "url('assets/img/golang.svg')",
-                    "url('assets/img/javascript.svg')",
-                    "url('assets/img/python.svg')",
-                ];
-                const typedArray = new Uint8Array(1)
-                const circles = document.querySelectorAll('.circles li');
-            
-                const setAnimatedBackground = (circle)=>{
-                    const randomValue = crypto.getRandomValues(typedArray)[0]
-                    const randomFloat = randomValue / Math.pow(2, 8)
-                    circle.style.backgroundImage = img[Math.floor(randomFloat * img.length)]; 
-                }
-            
-                for (let i = 0; i < circles.length; i++) {
-                    setAnimatedBackground(circles[i])
-                    circles[i].addEventListener("animationiteration", () => {
-                        setAnimatedBackground(circles[i]);
-                    });
-                }
-            }
+                });
+            });
         </script>
     </body>
 </html>
